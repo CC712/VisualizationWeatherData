@@ -1,0 +1,208 @@
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-family: helvetica, "microsoft sans serif";
+		font-size: 15px;
+	}
+	
+	.is-show {
+		animation: show 1s linear;
+	}
+	
+	@keyframes show {
+		from {
+			opacity: 0.2;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	
+	@-webkit-keyframes show
+	/* Safari 和 Chrome */
+	
+	{
+		from {
+			opacity: 0.2;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	
+	.is-hide {
+		display: none;
+		animation: hide 1s linear;
+	}
+	
+	@keyframes hide {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	
+	@-webkit-keyframes hide
+	/* Safari 和 Chrome */
+	
+	{
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	
+	.is-fixed {
+		display: fixed;
+		display: sticky;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+	}
+	
+	.flex-box {
+		display: flex;
+		vertical-align: center;
+		justify-content: center;
+		align-items: stretch;
+	}
+	
+	.flex_column {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.inline-blo {
+		display: inline-block;
+	}
+	
+	.bold {
+		font-weight: 700;
+	}
+	
+	.banner {
+		min-height: 52px;
+		min-width: 100%;
+		background-color: #fff;
+		font-size: 30px;
+		box-shadow: 0 1px 3px 0 #ececec;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.neirong {
+		width: 100%;
+	}
+	
+	.bar {
+		border: 1px solid black;
+		min-width: 100px;
+		text-align: left;
+		box-sizing: border-box;
+		
+		box-shadow: #ECECEC 0 1px 0 1px;
+		animation: animabar 1s ease-in-out;
+		overflow: hidden;
+	}
+	
+	.bar:hover {
+		color: white;
+		animation: bar-hover 1s;
+	}
+	
+	@keyframes bar-hover {
+	from {
+			width: 0;
+		}
+	}
+	
+	@-webkit-keyframes bar-hover {
+		from {
+			width: 0;
+		}
+	}
+	
+	@keyframes animabar {
+		from {
+			width: 0;
+		}
+	}
+	
+	@-webkit-keyframes animabar {
+		from {
+			width: 0;
+		}
+	}
+	
+	.transitionAll {
+		transition: all .3 ease-in-out;
+	}
+	
+	.title {
+		font-size: 32px;
+		font-weight: 300;
+		text-align: center;
+	}
+	
+	.back-to-top {
+		display: block;
+		width: 20px;
+		height: 20px;
+		box-shadow: 5px 5px 5px #888888;
+		border-radius: 4px;
+		position: fixed;
+		left: 90%;
+		top: 90%;
+		background: #ECECEC;
+		text-align: center;
+		text-decoration: none;
+		color: #888888;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-webkit-user-select: none;
+	}
+	
+	.stage {}
+	
+	.page-btn:hover {
+		cursor: pointer;
+		animation: pagebtn 1s infinite;
+	}
+	
+	@keyframes pagebtn {
+		from,
+		to {
+			transform: scale(1, 1);
+		}
+		50%{
+			transform: scale(1.2, 1.2);
+		}
+	}
+	
+	@-webkit-keyframes pagebtn {
+		from,
+		to {
+			transform: scale(1, 1);
+		}
+		50%{
+			transform: scale(1.2, 1.2);
+		}
+	}
+	.mask{
+		position: fixed;
+		left: 0;
+		top:30%;
+		background: #888;
+		width: 100%;
+		height: 300px;
+		font-size: 1.4em;
+		color:#FFFFFF
+		
+	}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<title>数据可视化DEMO</title>
+		<link rel="stylesheet" type="text/css" href="css/weather.css" />
+	</head>
+
+	<body>
+		<div id='banner' class="banner is-fixed">
+			<div class=" is-show bold inline-blo page-btn" id='page-btn' value='1'>PM2.5 排行</div>
+			<div class="is-show bold inline-blo page-btn" id='page-btn' value='2'>最高气温</div>
+			<div class="is-show bold inline-blo page-btn" id='page-btn' value='3'>温差</div>
+		</div>
+		<div class="stage">
+			<div id="page" class="page">
+				<div class="title">PM2.5</div>
+				<div class="flex-box ">
+					<lebal>城市名称<input type="text" class="cityName" value='拉萨' /><button class="cityName-btn">查询</button><button class="cityName-sort">改变排序</button></lebal>
+				</div>
+				<div class="neirong flex-box flex_column transitionAll"></div>
+			</div>
+			
+			<div class="page-footer">
+				
+			</div>
+
+			
+
+	</body>
+
+	<script src="js/weather.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
