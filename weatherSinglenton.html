@@ -14,6 +14,11 @@
 			<div class="is-show bold inline-blo page-btn" id='page-btn' value='2'>最高气温</div>
 			<div class="is-show bold inline-blo page-btn" id='page-btn' value='3'>温差</div>
 		</div>
+		<script > 
+		if (!window.jQuery){
+		document.querySelector('warn').setAttribute('class','is-show warn');
+		}
+		</script>
 		<div class="stage">
 			<div id="page" class="page">
 				<div class="title">PM2.5</div>
@@ -26,6 +31,7 @@
 			<div class="page-footer">
 				
 			</div>
+		<div class='warn is-hide' style='font-size:40px;color:red;'>请切换浏览器允许未经安全验证的脚本，得到返回的JSONP函数后，本页面才可正常浏览 </div>		
 
 			
 
